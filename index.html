@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+    /* Configurações gerais da página*/
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100%;
+            background-color: rgb(244, 240, 240);
+            display: grid;
+            grid-template-rows: 5;
+            row-gap: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        /* Configurações gerais das sections*/
+
+        section{
+            background-color: white;
+            width: 98%;
+            height: auto; /*A ser modificado para auto, posteriormente*/
+            border-radius: 8px;
+            display: flex; /*Aplicando display flex em toda as sections*/
+            padding: 10px;
+        }
+
+        /* Header e Menu*/
+
+        header{
+            background-color: rgb(3, 3, 213);
+            width: 100%;
+            height: 50px;
+            color: white;
+            margin-bottom: 10px;     
+        }
+
+
+        /* Quem sou eu*/
+
+        .bio{
+            justify-content: center;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+            text-align: center;
+        }
+        .imagem{
+            border: 2px solid black;
+            width: 250px;
+            height: 250px;
+            border-radius: 100%;
+            background-image: url(imagens/Perfil.jpg);
+           background-position: center;
+           background-size: cover;
+        }
+         
+        .saibamais{
+            background-color: rgb(102, 102, 249);
+            border-radius: 08px;
+            border: 0px;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            transition: 0.5s ease;
+        }
+
+        .saibamais:hover{
+            background-color: rgb(96, 147, 149);
+            font-weight: bold;
+        }
+
+
+
+        /*Video de apresentação*/
+
+
+
+        /*Habilidades*/
+        .html{
+            display: flex;
+            width: 100%;
+            height: 20px;
+            justify-content: center;
+            align-items: center;
+            gap: 2px;
+            
+        }
+
+        .barra{
+            background-color: aqua;
+            width: 90%;
+            height: 10px;
+            border-radius: 5px;
+
+        }
+
+
+
+        /*Formação*/
+
+
+
+        /*Portifolio*/
+
+
+
+        /*Rodapé*/
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <section class="bio">
+        <div class="imagem">
+        </div>
+        
+        <div class="texto">
+            <p>Sou apaixonado por tecnologia e desenvolvimento, sempre buscando transformar ideias em soluções digitais funcionais e criativas. Nerd assumido, tenho formação em Administração, pós-graduação em Ciência de Dados e atualmente curso Análise e Desenvolvimento de Sistemas. Unindo técnica, visão estratégica e dedicação, meu objetivo é entregar projetos que realmente façam diferença. </p>
+        </div>
+        <button class="saibamais">Saiba mais</button>
+
+    </section>
+
+    <section class="video">
+        Video
+
+    </section>
+
+    <section class="skills">
+        <div class="html">
+            <p>HTML</p>
+            <div class="barra"></div>
+            <p>90%</p>
+        </div>
+
+    </section>
+
+    <section class="formacao">
+        Formação
+
+    </section>
+
+    <section class="portifolio">
+        Projetos
+
+    </section>
+
+    <footer>
+        <p>Site desenvolvido por <span style="font-weight: bold;">Ferrari.Dev</span></p>
+
+    </footer>
+    
+</body>
+</html>
