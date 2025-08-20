@@ -31,6 +31,7 @@
             border-radius: 8px;
             display: flex; /*Aplicando display flex em toda as sections*/
             padding: 10px;
+            margin: auto;
         }
 
         /* Header e Menu*/
@@ -59,8 +60,8 @@
             height: 250px;
             border-radius: 100%;
             background-image: url(imagens/Perfil.jpg);
-           background-position: center;
-           background-size: cover;
+            background-position: center;
+            background-size: cover;
         }
          
         .saibamais{
@@ -85,25 +86,96 @@
 
 
         /*Habilidades*/
-        .html{
+
+        .listatecnologias{
             display: flex;
             width: 100%;
-            height: 20px;
+            height: 80px;
             justify-content: center;
             align-items: center;
-            gap: 2px;
+            gap: 20px;
+            border-bottom: 2px solid rgb(208, 205, 205);
+        }
+
+        .skills{
+            flex-direction: column;
+            height: auto;
+            gap: 40px;
+        }
+        .habilidades{
+            display: flex;
+            width: 100%;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-direction: column;
             
+        }
+
+        .habilidades p{
+            width: 40px;
+            text-align: left;
+            text-wrap: wrap;
+        }
+
+        .fundobarra{
+            background-color: rgb(186, 188, 188);
+            width: 90%;
+            height: 40px;
+            border-radius: 15px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+           
+        }
+
+        .fundobarra p{
+           
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            margin-top: 10px;
+            margin-right: 10px;
+           
         }
 
         .barra{
             background-color: aqua;
             width: 90%;
-            height: 10px;
-            border-radius: 5px;
-
+            height: 40px;
+            border-radius: 15px;
+            
         }
 
+        .barra p{
+            margin-right: auto;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            margin-top: 10px;
+            
+        }
 
+        /* .dados{
+            display: flex;
+            flex-direction: row;
+            width: 88%;
+            height: auto;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            font-size: 20px;
+        } */
+
+
+        
+        /*.barrahtml{
+            background-color: aqua;
+            width: 90%;
+            height: 10px;
+            border-radius: 5px;
+        }*/
 
         /*Formação*/
 
@@ -135,7 +207,9 @@
         </div>
         
         <div class="texto">
-            <p>Sou apaixonado por tecnologia e desenvolvimento, sempre buscando transformar ideias em soluções digitais funcionais e criativas. Nerd assumido, tenho formação em Administração, pós-graduação em Ciência de Dados e atualmente curso Análise e Desenvolvimento de Sistemas. Unindo técnica, visão estratégica e dedicação, meu objetivo é entregar projetos que realmente façam diferença. </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, distinctio placeat consectetur 
+                ducimus necessitatibus optio quia. Blanditiis, saepe dignissimos. Sint veritatis quasi, iure 
+                expedita facilis iusto. Dolor excepturi repudiandae facere?lore</p>
         </div>
         <button class="saibamais">Saiba mais</button>
 
@@ -147,11 +221,63 @@
     </section>
 
     <section class="skills">
-        <div class="html">
-            <p>HTML</p>
-            <div class="barra"></div>
-            <p>90%</p>
+        <div class="listatecnologias">
+            <img src="imagens/tecnologia.png" alt="" style="width: 50px;height: 50px;">
+            <h2>Tecnologias</h2>
+            </div>
+        <div class="habilidades">
+            <img src="imagens/htmllogo.png" width="80px" height="120px" alt="" >
+            <div class="fundobarra">
+                <div class="barra">
+                </div>
+                <p>90%</p>
+            </div>
+            
         </div>
+        <div class="habilidades">
+            <img src="imagens/csslogo.png" alt="" width="150px" height="160px">
+            <div class="fundobarra">
+                <div class="barra" >
+                </div>
+                <p>90%</p>
+            </div>
+            
+        </div>
+
+        <div class="habilidades">
+            <img src="imagens/JSlogopng.png" width="130px" height="140px" alt="">
+            <div class="fundobarra">
+                <div class="barra" style="width: 80%;">
+                </div>
+                <p>80%</p>
+            </div>
+            
+        </div>
+        <div class="habilidades">
+            <img src="imagens/NODELOGO.png" width="200px" height="180px" alt="">
+            <div class="fundobarra">
+                <div class="barra">
+                </div>
+                <p>90%</p>  
+            </div>
+        </div>
+        <div class="habilidades">
+            <img src="imagens/pythonlogo.png" alt="" width="150px" height="160px">
+            <div class="fundobarra">
+                <div class="barra" style="width: 80%;">
+                </div>
+                <p>80%</p>
+            </div>
+        </div>
+        <div class="habilidades">
+            <img src="imagens/mysqllogo.png" alt="" width="130px" height="140px">
+            <div class="fundobarra">
+                <div class="barra" style="width: 70%;">
+                </div>
+                <p>70%</p>
+            </div>  
+        </div>
+
 
     </section>
 
