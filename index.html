@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <style>
     /* Configurações gerais da página*/
         *{
@@ -41,7 +42,14 @@
             width: 100%;
             height: 50px;
             color: white;
-            margin-bottom: 10px;     
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+        .menu{
+            display: flex;
+            gap: 15px;
         }
 
 
@@ -55,13 +63,18 @@
             text-align: center;
         }
         .imagem{
-            border: 2px solid black;
-            width: 250px;
-            height: 250px;
+            border: 4px solid rgb(102, 102, 249);
+            width: 225px;
+            height: 225px;
             border-radius: 100%;
             background-image: url(imagens/Perfil.jpg);
             background-position: center;
             background-size: cover;
+            background-repeat: no-repeat;
+            padding: 4px;
+            background-color: white;
+            background-clip: content-box;
+            
         }
          
         .saibamais{
@@ -137,6 +150,7 @@
             font-size: 20px;
             margin-top: 10px;
             margin-right: 10px;
+            margin-left: 5px;
            
         }
 
@@ -157,27 +171,55 @@
             
         }
 
-        /* .dados{
-            display: flex;
-            flex-direction: row;
-            width: 88%;
-            height: auto;
-            justify-content: space-between;
-            align-items: center;
-            font-weight: bold;
-            font-size: 20px;
-        } */
-
-
-        
-        /*.barrahtml{
-            background-color: aqua;
-            width: 90%;
-            height: 10px;
-            border-radius: 5px;
-        }*/
-
         /*Formação*/
+
+        .formacao{
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            gap: 20px;
+        }
+        .cabecalhoformacao{
+            display: flex;
+            width: 100%;
+            height: 80px;
+            justify-content: center;
+            align-items: center;
+            gap: 22px;
+            border-bottom: 2px solid rgb(208, 205, 205);
+        }
+        .formacao01{
+            background-color: rgb(247, 244, 244);
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+            padding: 10px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+           
+        }
+        .formacao01azul{
+            background-color: rgba(0, 0, 255, 0.38);
+            border-radius: 10px;
+            padding-left: 6px;
+            color: rgb(47, 47, 47);
+            transition: ease 0.3s;
+            
+        }
+
+        .formacao01azul:hover{
+            padding-left: 10px;
+        }
+        
+        .data{
+            font-weight: bold;
+            color: rgb(0, 0, 0);  
+        }
+
+        .instituicao{
+            color: rgba(0, 30, 255, 0.514);
+            font-weight: bold;
+           
+        }
 
 
 
@@ -199,6 +241,20 @@
 </head>
 <body>
     <header>
+        <div class="menu">
+            <span class="material-symbols-outlined">
+                home
+            </span>
+            <span class="material-symbols-outlined">
+                info
+            </span>
+            <span class="material-symbols-outlined">
+                laptop_chromebook
+            </span>
+            <span class="material-symbols-outlined">
+                chat
+            </span>
+        </div>
 
     </header>
 
@@ -207,9 +263,8 @@
         </div>
         
         <div class="texto">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, distinctio placeat consectetur 
-                ducimus necessitatibus optio quia. Blanditiis, saepe dignissimos. Sint veritatis quasi, iure 
-                expedita facilis iusto. Dolor excepturi repudiandae facere?lore</p>
+            <p>Desenvolvedor full stack apaixonado por tecnologia.
+            Transformo ideias em sites modernos, funcionais e estratégicos, sempre focados em gerar resultados reais para meus clientes.</p>
         </div>
         <button class="saibamais">Saiba mais</button>
 
@@ -282,12 +337,57 @@
     </section>
 
     <section class="formacao">
-        Formação
+        <div class="cabecalhoformacao">
+            <img src="imagens/formacao.PNG" alt="" width="40px" height="50px">
+            <h2>Formação</h2>
+        </div>
+        <div class="formacao01azul">
+            <div class="formacao01">
+                <p class="data">2025 - Atual</p>
+                <p class="instituicao">Estácio de Sá</p>
+                <p>Bacharelado em análise e desenvolv. de sistemas</p>
+            </div>
+        </div>
+ 
+        <div class="formacao01azul">
+            <div class="formacao01">
+                <p class="data">2024 - 2025</p>
+                <p class="instituicao">Descomplica</p>
+                <p>MBA em Desenvolvimento Full stack</p>
+            </div>
+        </div>
+
+        <div class="formacao01azul">
+            <div class="formacao01">
+                <p class="data">2025 - 2025</p>
+                <p class="instituicao">UNINTER</p>
+                <p>MBA em Engenharia de software</p>
+            </div>
+        </div>
+
+        <div class="formacao01azul">
+            <div class="formacao01">
+                <p class="data">2012 - 2017</p>
+                <p class="instituicao">UFRRJ</p>
+                <p>Administração de empresas</p>
+            </div>
+        </div>
+
+        <div class="formacao01azul">
+            <div class="formacao01">
+                <p class="data">2011 - 2011</p>
+                <p class="instituicao">Microlins</p>
+                <p>Web Designer</p>
+            </div>
+        </div>
 
     </section>
 
     <section class="portifolio">
-        Projetos
+        <div class="cabecalhoformacao">
+            <img src="imagens/notebook.png" alt="" width="60px" height="60px">
+            <h2>Projetos</h2>
+        </div>
 
     </section>
 
